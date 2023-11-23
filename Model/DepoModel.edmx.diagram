@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4bb2240648f24e53bb298a9a1c400429" Name="Diagram1">
+        <EntityTypeShape EntityType="DepoZadohinModel.FloorFlight" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DepoZadohinModel.sysdiagrams" Width="1.5" PointX="15.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DepoZadohinModel.Train" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DepoZadohinModel.Ucet" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DepoZadohinModel.VidWork" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DepoZadohinModel.Work" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="DepoZadohinModel.FK_Train_FloorFlight" ManuallyRouted="false" />
+        <AssociationConnector Association="DepoZadohinModel.FK_Ucet_Train" ManuallyRouted="false" />
+        <AssociationConnector Association="DepoZadohinModel.FK_Ucet_Work" ManuallyRouted="false" />
+        <AssociationConnector Association="DepoZadohinModel.FK_Work_VidWork" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

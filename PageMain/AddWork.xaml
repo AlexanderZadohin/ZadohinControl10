@@ -1,0 +1,18 @@
+﻿<Page x:Class="ZadohinControl10.PageMain.AddWork"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZadohinControl10.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="619"
+      Title="AddWork">
+
+    <Grid>
+        <Button Content="Добавить работу" Name="AddWorkBtn" HorizontalAlignment="Left" Margin="243,341,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="AddWorkBtn_Click"/>
+        <TextBox Name="WorkNameTb" HorizontalAlignment="Left" Height="50" Margin="116,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="394"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Введит"/><Run Text="е"/><Run Text=" название работ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="116,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="В"/><Run Text="ыберитее тип ра"/><Run Text="б"/><Run Text="оты"/></TextBlock>
+        <ComboBox Name="VidWorkCmb" HorizontalAlignment="Left" Margin="116,221,0,0" VerticalAlignment="Top" Width="394" Height="55"/>
+    </Grid>
+</Page>

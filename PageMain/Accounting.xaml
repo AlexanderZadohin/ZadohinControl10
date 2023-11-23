@@ -1,0 +1,37 @@
+﻿<Page x:Class="ZadohinControl10.PageMain.Accounting"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZadohinControl10.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="609"
+      Title="Accounting">
+
+    <Grid>
+        <DataGrid x:Name="DataGR" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="117" Margin="10,10,0,0" VerticalAlignment="Top" Width="589">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Train.Name}" Header="Название поезда"/>
+                <DataGridTextColumn Binding="{Binding Train.FloorFlight.Name}" Header="Этажность"/>
+                <DataGridTextColumn Binding="{Binding Work.Name}" Header="Название работы"/>
+                <DataGridTextColumn Binding="{Binding Work.VidWork.Name}" Header="Вид работы"/>
+                <DataGridTextColumn Binding="{Binding Price, StringFormat={}{0:F2} ₽}" Header="Цена"/>
+                <DataGridTextColumn Binding="{Binding DateWork, StringFormat=dd/MM/yyyy}" Header="Дата"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="40,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Выберите "/><Run Text="название "/><Run Text="вагона"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="40,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="В"/><Run Text="ыберитее "/><Run Text="этажность"/></TextBlock>
+        <ComboBox x:Name="FloorFlightCmb" HorizontalAlignment="Left" Margin="40,172,0,0" VerticalAlignment="Top" Width="212" Height="32" SelectionChanged="FloorFlightCmb_SelectionChanged"/>
+        <ComboBox x:Name="TrainCmb" HorizontalAlignment="Left" Margin="40,239,0,0" VerticalAlignment="Top" Width="212" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="291,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Выберите "/><Run Text="название работ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="291,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="В"/><Run Text="ыберитее тип ра"/><Run Text="б"/><Run Text="оты"/></TextBlock>
+        <ComboBox x:Name="VidWorkCmb" HorizontalAlignment="Left" Margin="291,172,0,0" VerticalAlignment="Top" Width="231" Height="32" SelectionChanged="VidWorkCmb_SelectionChanged"/>
+        <ComboBox x:Name="WorkCmb" HorizontalAlignment="Left" Margin="291,239,0,0" VerticalAlignment="Top" Width="231" Height="32"/>
+        <DatePicker Name="DTPicker" HorizontalAlignment="Left" Margin="47,305,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="AddAccountingBtn" Content="Добавить запись" HorizontalAlignment="Left" Margin="398,305,0,0" VerticalAlignment="Top" Width="124" Height="24" Click="AddAccountingBtn_Click"/>
+        <TextBox x:Name="PriceTb" HorizontalAlignment="Left" Height="23" Margin="214,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Введите цену"/>
+        <TextBlock HorizontalAlignment="Left" Margin="47,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Выберите дату"/>
+
+    </Grid>
+</Page>

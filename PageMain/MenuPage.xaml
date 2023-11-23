@@ -1,0 +1,19 @@
+﻿<Page x:Class="ZadohinControl10.PageMain.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZadohinControl10.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="419" d:DesignWidth="183"
+      Title="MenuPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Margin="0 10 0 10"><Hyperlink x:Name="UcetHb" Click="UcetHb_Click"><Run Text="Учёт"/></Hyperlink></TextBlock>
+            <TextBlock Margin="0 10 0 10"><Hyperlink x:Name="AddTrainHb" Click="AddTrainHb_Click"><Run Text="Добавить вагон"/></Hyperlink></TextBlock>
+            <TextBlock Margin="0 10 0 10"><Hyperlink x:Name="AddWorkHb" Click="AddWorkHb_Click"><Run Text="Добавить выполненую работу"/></Hyperlink></TextBlock>
+            <TextBlock Margin="0 10 0 10"><Hyperlink x:Name="ReportHb" Click="ReportHb_Click"><Run Text="Отчет за период"/></Hyperlink></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
